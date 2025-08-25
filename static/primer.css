@@ -1,8 +1,6 @@
 /* import own styles */
 /* @import style mal */
 @import url("./mal.css");
-@import url("./frank.css");
-/* @import url("./kira.css"); */
 
 /* Global Styles */
 
@@ -20,6 +18,11 @@ body {
 
 .header {
   background-color: #8f8f8f;
+  display: flex;
+  position: relative;
+}
+.Logo {
+  width: 20px;
 }
 .menu {
   display: flex;
