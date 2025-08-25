@@ -359,8 +359,50 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="imprint">Impressum</div>
-      <div>&copy; 2025 WoofWhisperer by Team Woofwhisperer /WBSCS</div>
+      <div class="imprint" id="imprint-text">Impressum</div>
+      <div id="copyright-text">
+        &copy; 2025 WoofWhisperer by Team Woofwhisperer /WBSCS
+      </div>
+      <div id="imprint-container" style="display: none">
+        <div id="imprint-content"></div>
+      </div>
     </footer>
+    <script type="text/javascript">
+      document
+        .getElementById("copyright-text")
+        .addEventListener("click", function () {
+          var imprintContainer = document.getElementById("imprint-container");
+          var imprintContent = document.getElementById("imprint-content");
+          imprintContent.innerHTML =
+            document.getElementById("imprint-text").innerHTML;
+          imprintContainer.style.display = "block";
+          setTimeout(function () {
+            imprintContainer.style.height = "75vh";
+          }, 0);
+        });
+      document
+        .getElementById("imprint-text")
+        .addEventListener("click", function () {
+          var imprintContainer = document.getElementById("imprint-container");
+          var imprintContent = document.getElementById("imprint-content");
+          imprintContent.innerHTML =
+            document.getElementById("imprint-text").innerHTML;
+          imprintContainer.style.display = "block";
+          setTimeout(function () {
+            imprintContainer.style.height = "75vh";
+          }, 0);
+        });
+      document
+        .getElementById("imprint-container")
+        .addEventListener("click", function () {
+          this.style.height = "0";
+          setTimeout(
+            function () {
+              this.style.display = "none";
+            }.bind(this),
+            500
+          );
+        });
+    </script>
   </body>
 </html>

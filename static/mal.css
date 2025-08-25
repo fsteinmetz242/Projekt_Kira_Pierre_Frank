@@ -72,3 +72,19 @@
   border-radius: 10px; /* add a rounded corner effect to the images */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow to the images */
 }
+#imprint-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75vh; /* half of the screen size */
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: none;
+  transition: all 0.69s ease-in-out;
+}
+
+#imprint-content {
+  padding: 20px;
+}
