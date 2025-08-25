@@ -341,7 +341,7 @@ body {
   margin: 10px;
   width: 30%;
   text-align: left;
-  font-size: smaller;
+  font-size: small;
 }
 .question p {
   text-align: center;
@@ -377,6 +377,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   min-height: 25vh;
+  padding-bottom: 10rem;
 }
 
 .features-pricing h2 {
