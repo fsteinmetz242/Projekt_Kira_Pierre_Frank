@@ -32,7 +32,7 @@ body {
 .menu ul {
   display: flex;
   justify-content: flex-start; /* align items to the right */
-  width: 85%; /* take half of the parent div's width */
+  width: 45vw; /* take half of the parent div's width */
   gap: 10px;
 }
 
