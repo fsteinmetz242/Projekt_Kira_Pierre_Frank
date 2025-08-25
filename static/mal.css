@@ -26,3 +26,51 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
+.teaser-section {
+  background-color: #c4c4c4;
+  text-align: center;
+  padding-top: 2vh;
+  filter: contrast(1.2) brightness(0.9); /* add a subtle filter to the section */
+}
+
+.teaser-container {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 4rem;
+  transform: skewY(-5deg); /* add a slight skew to the container */
+}
+
+.teaser {
+  flex-basis: 23%; /* take up 30% of the available space */
+  height: auto;
+  background-color: #c4c4c4; /* change the background color to a lighter gray */
+  border-radius: 20px; /* add a rounded corner effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow */
+}
+
+.teaser-description {
+  text-align: center;
+  max-width: 80%; /* set maximum width to 50% */
+  margin: 0 auto; /* center the text horizontally */
+  font-size: smaller;
+  text-align: justify;
+  filter: opacity(0.8); /* add a subtle opacity effect to the text */
+}
+
+.teaser-title h2 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-shadow: 2px 2px #ededed; /* add a subtle text shadow */
+}
+
+.teaser img {
+  filter: grayscale(80%) contrast(1.2); /* add a filter to the images */
+  border-radius: 10px; /* add a rounded corner effect to the images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow to the images */
+}
