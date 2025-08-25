@@ -20,9 +20,22 @@ body {
   background-color: #8f8f8f;
   display: flex;
   position: relative;
+  padding: 0 0;
+}
+.flag-container {
+  position: absolute;
+  top: 10px; /* Abstand von oben */
+  right: 10px; /* rechtsbündig */
+  display: flex;
+  gap: 10px; /* Abstand zwischen den Flaggen */
 }
 .Logo {
-  width: 20px;
+  width: 80px; /* gewünschte Größe */
+  height: auto;
+  position: absolute; /* bleibt oben links */
+  left: 10px; /* Abstand vom linken Rand */
+  top: 50%;
+  transform: translateY(-50%); /* Logo etwas nach oben verschieben */
 }
 .menu {
   display: flex;
