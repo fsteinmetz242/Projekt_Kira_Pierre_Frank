@@ -1,6 +1,5 @@
 .flag-container {
   display: flex;
-  align-items: baseline;
   flex-direction: row-reverse;
 }
 .flag-icon-container {
@@ -87,4 +86,15 @@
 
 #imprint-content {
   padding: 20px;
+}
+.paw-icon {
+  width: 128px;
+  height: 128px;
+  filter: grayscale(50%);
+}
+.paw-icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25rem;
 }
