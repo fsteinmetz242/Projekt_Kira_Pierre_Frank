@@ -1,3 +1,7 @@
+/* import own styles */
+/* @import style mal */
+@import url("./mal.css");
+
 /* Global Styles */
 
 * {
