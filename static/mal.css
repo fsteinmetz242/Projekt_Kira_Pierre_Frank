@@ -29,7 +29,8 @@
 .teaser-section {
   background-color: #c4c4c4;
   text-align: center;
-  padding-top: 2vh;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   filter: contrast(1.2) brightness(0.9); /* add a subtle filter to the section */
 }
 
@@ -41,13 +42,18 @@
   align-items: center;
   gap: 20px;
   padding-bottom: 4rem;
-  transform: skewY(-5deg); /* add a slight skew to the container */
+  transform: skewY(-2.5deg); /* add a slight skew to the container */
 }
 
 .teaser {
   flex-basis: 23%; /* take up 30% of the available space */
   height: auto;
-  background-color: #c4c4c4; /* change the background color to a lighter gray */
+  background-color: hsla(
+    13,
+    41%,
+    80%,
+    0.342
+  ); /* change the background color to a lighter gray */
   border-radius: 20px; /* add a rounded corner effect */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow */
 }
@@ -72,6 +78,12 @@
   filter: grayscale(80%) contrast(1.2); /* add a filter to the images */
   border-radius: 10px; /* add a rounded corner effect to the images */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow to the images */
+  /* adding background color over image as filter*/
+}
+.teaser img:hover {
+  filter: grayscale(0%) contrast(1.2);
+  /* adding a hover effect to the images */
+  transition: all 0.3s ease-in-out;
 }
 
 .paw-icon {
