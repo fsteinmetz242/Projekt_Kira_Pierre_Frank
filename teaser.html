@@ -159,6 +159,12 @@
         }, 500); // Dauer der CSS‑Transition (siehe CSS)
       }
 
+      /* playing a bark sound on hover imprint*/
+      function bark() {
+        var snd = new Audio("./static/audio/dog-barking.mp3");
+        snd.play();
+      }
+
       /* adding EventListeners */
       document
         .getElementById("copyright-text")
@@ -167,6 +173,10 @@
       document
         .getElementById("imprint-text")
         .addEventListener("click", showImprint);
+
+      document
+        .getElementById("imprint-text")
+        .addEventListener("mouseover", bark);
 
       document
         .getElementById("imprint-container")
