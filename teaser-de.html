@@ -103,51 +103,51 @@
             the trusted companies above.
           </p>
         </div>
-
         <div>
           <strong>Contact</strong><br />Team Woofwhisperer<br />Team
           Woofwhisperer GmbH<br />Musterstreet 27<br />12345 Awesome City<br />Wonderland
         </div>
-
         <div id="imprint-content"></div>
       </div>
     </footer>
-    <script type="text/javascript">
+    <script type="module">
+      /* helper functions */
+      /* showing imprint */
+      function showImprint() {
+        const container = document.getElementById("imprint-container");
+        const content = document.getElementById("imprint-content");
+
+        /* Inhalt aus dem versteckten Text holen und einfügen */
+        content.innerHTML = document.getElementById("imprint-text").innerHTML;
+
+        /* Overlay sichtbar machen – Höhe später animieren */
+        container.style.display = "block";
+        setTimeout(() => {
+          container.style.height = "75vh"; // 0 → 75 vh
+        }, 0);
+      }
+
+      /* closing imprint, hide overlay */
+      function hideImprint() {
+        const container = document.getElementById("imprint-container");
+        container.style.height = "0";
+        setTimeout(() => {
+          container.style.display = "none";
+        }, 500); // Dauer der CSS‑Transition (siehe CSS)
+      }
+
+      /* adding EventListeners */
       document
         .getElementById("copyright-text")
-        .addEventListener("click", function () {
-          var imprintContainer = document.getElementById("imprint-container");
-          var imprintContent = document.getElementById("imprint-content");
-          imprintContent.innerHTML =
-            document.getElementById("imprint-text").innerHTML;
-          imprintContainer.style.display = "block";
-          setTimeout(function () {
-            imprintContainer.style.height = "75vh";
-          }, 0);
-        });
+        .addEventListener("click", showImprint);
+
       document
         .getElementById("imprint-text")
-        .addEventListener("click", function () {
-          var imprintContainer = document.getElementById("imprint-container");
-          var imprintContent = document.getElementById("imprint-content");
-          imprintContent.innerHTML =
-            document.getElementById("imprint-text").innerHTML;
-          imprintContainer.style.display = "block";
-          setTimeout(function () {
-            imprintContainer.style.height = "75vh";
-          }, 0);
-        });
+        .addEventListener("click", showImprint);
+
       document
         .getElementById("imprint-container")
-        .addEventListener("click", function () {
-          this.style.height = "0";
-          setTimeout(
-            function () {
-              this.style.display = "none";
-            }.bind(this),
-            500
-          );
-        });
+        .addEventListener("click", hideImprint);
     </script>
   </body>
 </html>
