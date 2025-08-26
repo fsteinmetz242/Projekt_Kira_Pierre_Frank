@@ -2,7 +2,7 @@
 /* @import style mal */
 @import url("./mal.css");
 @import url("./frank.css");
-/* @import url("./kira.css"); */
+@import url("./kira.css");
 
 /* Global Styles */
 
@@ -37,7 +37,7 @@ body {
 }
 
 .menu ul li:first-child {
-  margin-right: auto; /* push the first item to the left */
+  margin-right: 80px; /* push the first item to the left */
 }
 
 .menu li {
@@ -45,6 +45,7 @@ body {
   margin: 0 10px;
   cursor: pointer;
   text-align: right;
+  justify-content: center;
 }
 .opener-demos {
   display: flex;
