@@ -24,9 +24,33 @@
           <div>
             <nav class="menu">
               <ul>
-                <li><a href="./teaser.html">Try for free</a></li>
-                <li><a href="./index.html#whyalwaysmal">Features</a></li>
-                <li><a href="./index.html#features-pricing">Prices</a></li>
+                <li>
+                  <button
+                    type="button"
+                    onclick="window.location.href='./teaser.html'"
+                    class="try-button"
+                  >
+                    Try for free
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    onclick="window.location.href='./index.html#whyalwaysmal'"
+                    class="try-button"
+                  >
+                    Features
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    onclick="window.location.href='./index.html#features-pricing'"
+                    class="try-button"
+                  >
+                    Prices
+                  </button>
+                </li>
               </ul>
             </nav>
           </div>
@@ -406,6 +430,18 @@
         }, 500); // Dauer der CSS‑Transition (siehe CSS)
       }
 
+      function openTeaserEng() {
+        window.open("teaser.html", "_self");
+      }
+      function openTeaserDe() {
+        window.open("teaser-de.html", "_self");
+      }
+      function openIndexEng() {
+        window.open("teaser.html", "_self");
+      }
+      function openIndexDe() {
+        window.open("teaser-de.html", "_self");
+      }
       /* adding EventListeners */
       document
         .getElementById("copyright-text")
