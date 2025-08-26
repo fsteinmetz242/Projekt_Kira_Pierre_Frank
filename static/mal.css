@@ -1,3 +1,5 @@
+/* additional classes for teaser and lang-switch (flag-icon) */
+
 .flag-container {
   display: flex;
   flex-direction: row-reverse;
@@ -5,7 +7,7 @@
 .flag-icon-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-right: 1.5rem;
@@ -71,6 +73,20 @@
   border-radius: 10px; /* add a rounded corner effect to the images */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow to the images */
 }
+
+.paw-icon {
+  width: 128px;
+  height: 128px;
+  filter: grayscale(50%);
+}
+.paw-icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* needed for imprint */
 #imprint-container {
   position: fixed;
   bottom: 0;
@@ -86,15 +102,4 @@
 
 #imprint-content {
   padding: 20px;
-}
-.paw-icon {
-  width: 128px;
-  height: 128px;
-  filter: grayscale(50%);
-}
-.paw-icon-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.25rem;
 }
